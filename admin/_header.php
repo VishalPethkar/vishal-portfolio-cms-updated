@@ -1,0 +1,5 @@
+<?php require_once __DIR__ . '/../config/config.php'; admin_required(); ?>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title><?= e($page_title ?? 'Admin CMS') ?></title><link rel="stylesheet" href="<?= BASE_URL ?>admin/admin.css"></head><body>
+<aside class="sidebar"><div class="logo">VP<span>CMS</span></div><a href="dashboard.php">Dashboard</a><a href="content.php?section=skills">Skills</a><a href="content.php?section=projects">Projects</a><a href="content.php?section=experience">Experience</a><a href="content.php?section=education">Education</a><a href="content.php?section=certificates">Certificates</a><a href="content.php?section=services">Services</a><a href="settings.php">Site Settings</a><a href="messages.php">Messages</a><a href="<?= BASE_URL ?>" target="_blank">View Portfolio ↗</a><a href="logout.php">Logout</a></aside>
+<main class="admin-main"><header class="topbar"><div><span class="muted">Portfolio CMS</span><h1><?= e($page_title ?? 'Dashboard') ?></h1></div><a class="btn" href="settings.php">Edit Site</a></header>
